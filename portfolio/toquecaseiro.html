@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Portfólio | Toque Caseiro - Lucas Scárdua</title>
+
+    <!--[if IE]><link rel="shortcut icon" href="images/favicon.png"><![endif]-->
+    <link rel="icon" href="../images/favicon.png">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site pessoal de Lucas Scárdua">
+    <meta name="keywords" content="site, desenvolvedor, webdesigner">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Lucas Scárdua">
+    <meta name="theme-color" content="#062a42">
+
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:700|Righteous|Titillium+Web:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384">
+
+</head>
+
+<body>
+
+    <header class="cabecalho-portfolio">
+        <div class="btn-menu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+
+        <nav class="menu menu-desktop">
+            <div class="btn-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <a href="index.html" class="nome">
+                <img id="logo-desktop" src="../images/logo.png">
+            </a>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../index.html#sobre-mim">Sobre Mim</a></li>
+                <li><a href="../index.html#o-que-eu-faco">Serviços</a></li>
+                <li><a href="../index.html#projetos">Portfolio</a></li>
+                <li><a href="#fale-comigo">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo-pequeno">
+            <a href="../index.html">
+                <img id="logo" src="../images/logo.png">
+            </a>
+        </div>
+    </header>
+
+    <div class="portfolio-pagina-logo">
+        <h1>Toque Caseiro</h1>
+        <h2>- Site -</h2>
+
+        <img src="../images/portfolio/toquecaseiro/apresentacao-toquecaseiro.png">
+
+        <p>Para a doceria Toque Caseiro, situada em Tiradentes - Minags Gerais, desenvolvi um site <i>one page</i>, 
+        ou seja, um site com apenas uma página, contando um pouco da história da doceria e de como são feitos os produtos, todos 100% artesanais.
+        O site você pode conferir clicando <a href="http://www.docestoquecaseiro.com.br/" target="_blank">aqui</a>, e se tiver oportunidade, não deixe de provar a grande variedade de doces também. Estão aprovados!
+            
+            
+            Com sua mistura de reggae, rock, pop e soul, a banda FeitoNós</a>            tem conquistado o público capixaba, e necessitava de uma consultoria de mídias sociais para fortalecer a sua
+            imagem. O primeiro passo foi a criação do logo: algo que lembrasse música e transmitisse tranqüilidade, aliado
+            a um estilo <i>vintage</i>. O resultado você pode conferir ao lado.
+        </p>
+
+    </div>
+
+    <hr>
+
+    <section class="contato" id="fale-comigo">
+        <h2>Fale comigo!</h2>
+        <p><i class="fa fa-user" aria-hidden="true"></i>Lucas Scárdua</p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i>+55 28 98120 9647</p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:lcs.scardua@gmail.com" target="_blank">lcs.scardua@gmail.com</a></p>
+        <p><i class="fa fa-skype" aria-hidden="true"></i>scarddualucas</p>
+        <p><i class="fa fa-file-text" aria-hidden="true"></i><a href="downloads/curriculo-lucas-scardua-desenvolvedor-web.pdf">Currículo</a></p>
+        <p><i>Tem algum projeto na área de web, mídias sociais ou aplicativos? Vamos trabalhar juntos! Atendo empresas, startups, agências, pessoas e marcas. Não se preocupe: possuo uma empresa legalizada, com CNPJ e emissão de notas fiscais. Entre em contato comigo por qualquer endereço que eu retornarei prontamente. Estou à sua disposição!</i></p>
+    </section>
+
+    <footer>
+        <p>Lucas Scárdua / Desenvolvedor Front-End © 2016</p>
+    </footer>
+
+    <!--jQuery-->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script>
+        $(".btn-menu").click(function() {
+            $(".menu").show();
+        });
+
+        $(".btn-close").click(function() {
+            $(".menu").hide();
+        });
+
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 500);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        if (document.documentElement.clientWidth >= 1280) {
+            $('.menu-desktop').css({ display: "block" });
+        }
+    </script>
+
+</body>
+
+</html>
