@@ -25,11 +25,6 @@ i.fa-chevron-down,
     display: none;
 }
 
-.portfolio-pagina-logo p a {
-    color: #062a42;
-    border-bottom: none;
-}
-
 .cabecalho,
 .sobre,
 .servicos,
@@ -476,9 +471,9 @@ i.fa-chevron-down,
             }
 
         .portfolio-pagina-logo p a {
-    border-bottom: 2px dotted #fff;
+    border-bottom: none;
     text-decoration: none;
-    color: #fff;
+    color: #062a42;
 }
 .portfolio-pagina-logo p a:hover {
     border-bottom: 2px dotted #062a42;
@@ -699,6 +694,12 @@ footer {
     hr {
         display: none;
     }
+
+    .portfolio-pagina-logo p a {
+    border-bottom: 2px dotted #fff;
+    text-decoration: none;
+    color: #fff;
+}
 
     i.fa-chevron-down,
     #logo-desktop {
