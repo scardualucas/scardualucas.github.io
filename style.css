@@ -25,6 +25,11 @@ i.fa-chevron-down,
     display: none;
 }
 
+.portfolio-pagina-logo p a {
+    color: #062a42;
+    border-bottom: none;
+}
+
 .cabecalho,
 .sobre,
 .servicos,
