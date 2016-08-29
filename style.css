@@ -255,6 +255,13 @@ i.fa-chevron-down,
             transition: 0.9s;
         }
 
+    .icone-social a {
+        margin: 0px;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
 /*===== SKILLS =====*/
 .servicos {
     position: relative;
