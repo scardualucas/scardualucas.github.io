@@ -994,8 +994,12 @@ footer {
     .servicos .card-detalhes p {
         text-align: right;
         font-size: 1em;
-        width: 100%;
+        /*width: 100%;*/
         margin-top: -5%;
+        width: 90%;
+margin-top: -5%;
+position: absolute;
+margin-left: -10%;
     }
 
     .btn-close-web,
