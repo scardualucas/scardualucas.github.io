@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Ana Pimentel Fotografias</title>
+
+	<!--[if IE]><link rel="shortcut icon" href="images/favicon.png"><![endif]-->
+    <link rel="icon" href="images/favicon.jpg">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index, follow">
+
+	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+	<style>
+		* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    color: #0a0a0a;
+    cursor: default;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+}
+
+body {
+    background-color: #FEFEFE;
+    /*background-image: url(images/bg.jpg);*/
+    background-size: 100%;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.hideme {
+    opacity:0;
+}
+
+.topo {
+    transform: translateY(25%);
+}
+
+.main {
+    background-color: #fefefe;
+    padding-bottom: 1.5%;
+
+    box-shadow: rgba(0, 0, 0, 0.247059) 0px 0px 16px 0px;
+}
+
+/*===== HEADER =====*/
+header,
+.portfolio,
+.quem-sou {
+    width: 100%;
+    height: 100%;
+}
+
+.layer {
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+    background-color: rgba(10,187,181,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-image: url(images/bg2.jpg);
+    /*background-size: 100%;*/
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(102, 102, 102);
+    /*box-shadow: rgba(0, 0, 0, 0.247059) 0px 0px 16px 0px inset;*/
+}
+
+    header h1 {
+        border: 1px solid #ffffff;
+        padding: 1%;
+        color: #ffffff;
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+
+        /*transform: translateY(-50%);*/
+        /*top: 50%;
+        position: absolute;*/
+        width: 30%;
+        margin: 1% auto 0 34%;
+    }
+
+        header h1:hover {
+            background-color: #ffffff;
+            color: #0a0a0a;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+
+    .header-arrow {
+        color: #fefefe;
+        font-size: 2em;
+        margin-left: 48.5%;
+        margin-top: 12%;
+    }
+
+    .header-logo img {
+        display: block;
+        margin: 0 auto;
+        padding: 1% 0 0 0;
+        width: 20%;
+    }
+
+.header-menu {
+    display: block;
+    margin: 1.5% auto 0 auto;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 52%;
+}
+
+    .header-menu ul {
+	    list-style: none;
+    }
+
+        .header-menu ul li {
+            display: inline;
+            margin-right: 3%;
+        }
+
+            .header-menu ul li:last-child {
+                margin-right: 0;
+            }
+
+            .header-menu ul li a {
+                color: #fefefe;;
+                /*color: #0a0a0a;*/
+	            padding: 10px 15px;
+	            display: inline-block;
+ 	            text-decoration: none;
+                border: 1px solid transparent;
+            }
+
+                .header-menu ul li a:hover {
+	                /*background: rgba(0, 0, 0, .5);*/
+                    /*color: #04706c;*/
+                    color: #fefefe;
+                    transition: 0.3s;
+                    border: 1px solid #fefefe;
+                }
+
+.header-slide {
+    width: 100%;
+    height: 309px;
+    margin-top: 1.5%;
+    background: url(images/img-1.png) center no-repeat;
+    background-size: 100%;
+}
+
+/*===== PORTFOLIO =====*/
+.portfolio h1,
+.quem-sou h1,
+.testemunhos h1 {
+    /*color: #0abbb5;*/
+    color: #f99eaf;
+    font-size: 2.5em;
+    /*font-weight: 300;*/
+    letter-spacing: -1px;
+    padding: 1% 0 1% 0;
+    text-align: center;
+
+    /*background-color: red;*/
+    width: 25%;
+    margin: 2% auto 4% auto;
+    display: block;
+    border-bottom: 1px dotted #f99eaf;
+
+    font-weight:500;
+}
+
+.fotos {
+    display: block;
+    margin: 0 auto;
+    width: 1200px; 
+}
+
+    .fotos img {
+        margin: 0 1.5% 0 -4px;
+        /*width: 23.875%; */
+        width: 100%;
+        display: inline-block;   
+    }
+
+        .fotos img:nth-child(1),
+        .fotos img:nth-child(2),
+        .fotos img:nth-child(3),
+        .fotos img:nth-child(4) {
+            margin-bottom: 1.1%;
+        }
+
+        .fotos img:nth-child(4),
+        .fotos img:nth-child(8) {
+            margin-right: 0;
+        }
+
+.escurecer img{
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all 0.6s ease;
+     -moz-transition: all 0.6s ease;
+       -o-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+          transition: all 0.6s ease;
+}
+ 
+.escurecer img:hover {
+  -webkit-filter: brightness(50%);
+}
+
+/**/
+
+.foto {
+    margin: 0 1.6% 0 -4px;
+    width: 23.875%; 
+    display: inline-block;
+    position: relative;
+}
+
+.foto:nth-child(1),
+        .foto:nth-child(2),
+        .foto:nth-child(3),
+        .foto:nth-child(4) {
+            margin-bottom: 1.1%;
+        }
+
+        .foto:nth-child(4),
+        .foto:nth-child(8) {
+            margin-right: 0;
+        }
+
+.overlay{ 
+display: none;
+
+}
+
+.overlay p {
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.foto:hover .overlay{
+display : block;
+
+
+    background:rgba(0,0,0,.8);   
+    top:0;
+    left:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    padding: 15px;    
+    width: 100%;
+    margin-left: -4px;
+
+    /*margin-top: 5%;*/
+}
+
+
+
+/**/
+
+.mais {
+    display: block;
+    margin: 0.5% auto;
+    width: 43px;
+}
+
+    .mais i {
+        color: #0abbb5;
+        cursor: pointer;
+        font-size: 2.5em;
+    }
+
+        .mais i:hover {
+            color: #FD9CAF;
+            transition: 0.5s;
+        }
+
+/*===== QUEM SOU =====*/
+.qs {
+    background-image: url("img_parallax.jpg");
+    min-height: 50%;
+    background-size: cover; 
+}
+
+.qs2 {
+    background-image: url("images/bg2.jpg");
+    min-height: 50%;
+    /*background-size: cover; */
+}
+
+.quem-sou {
+    background-color: #fefefe;
+}
+
+    .quem-sou h1 {
+        padding-top: 2%;
+    }
+
+    .quem-sou p,
+    .portfolio p {
+        display: block;
+        font-size: 1.2em;
+        margin: 2% auto 2.5% auto;
+        text-align: center;
+        width: 50%;
+    }
+
+.perfil {
+    display: block;
+    margin: 0 auto;
+    width: 25%; /*50*/
+
+    transition: all 1s ease-in-out;
+}
+
+    .perfil img {
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+        width: 35%;
+    }
+
+/*===== TESTEMUNHOS =====*/
+.testemunhos {
+    display: block;
+    height: 75%;
+    margin: 0 auto;
+    width: 1200px; 
+}
+
+    .testemunho {
+        margin: 1% 0.5% 1% -4px;
+        width: 24.625%; 
+        display: inline-block;  
+    }
+
+        .testemunho:nth-child(4) {
+            margin-right: 0;
+        }
+
+        .testemunho img {
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+        }
+
+        .testemunho p {
+            display: block;
+            margin: 5% auto 0 auto;
+            text-align: center;
+            width: 90%;
+        }
+
+/*===== REDES SOCIAIS =====*/
+.redes {
+    background-color: #fefefe;
+    display: block;
+    height: 54%;
+    margin: 0 auto;
+}
+
+    .rede {
+        display: inline-block;
+        height: 230px;  
+        margin: 5% 1.5% 0 0;
+        width: 30.833%; 
+    }
+
+        .rede:nth-child(1) {
+            margin-left: 2%;
+        }
+
+        .rede:nth-child(3) {
+            margin-right: 0;
+        }
+
+.facebook {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/redes1.jpg);
+    background-size: 100%;
+}
+
+.instagram {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/redes2.jpg);
+    background-size: 100%;
+}
+
+.email {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/redes3.jpg);
+    background-size: 100%;
+}     
+
+.icon {
+    display: block;
+    margin: 22.5% auto;
+    width: 43px;
+}
+
+    .icon i {
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 4.5em;
+    }
+
+        .icon i:hover {
+            color: #FD9CAF;
+            transition: 0.5s;
+        }
+        
+/*===== FOOTER =====*/
+footer {
+    background-color: #202020;
+    border-top: 15px solid #1a1a1a;
+    height: 150px;
+}
+
+.fdiv {
+    width: 33.33%;
+    /*background-color: white;
+    height: 100px;*/
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.footer-menu {
+    color: #0a0a0a;
+}
+
+    .footer-menu ul {
+        list-style: none;
+        margin: 3.5% 0 0 10%;
+    }
+
+        .footer-menu ul li {
+            padding-bottom: 1%;
+        }
+
+            .footer-menu ul li a {
+                color: #cccccc;
+                text-decoration: none;
+            }
+
+footer p {
+    color: #cccccc;
+    margin-top: -5%;
+    text-align: center;
+}
+
+.quem-sou,
+.redes {
+    background-color: #daf0ed;
+}
+
+
+    .menu-desktop {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 60px;
+        /*background-color: rgba(0, 0, 0, 0.96);*/
+        background-color: rgba(10,187,181,0.96);
+        color: #ffffff;
+        z-index: 9999;
+        display: none;
+        margin-top: 0;
+    }
+
+    .menu-desktop ul {
+        width: 52%;
+        display: block;
+        margin: 0.7% auto;
+    }
+
+.blog-fotos {
+    width: 1200px;
+    /*background-color: red;*/
+    margin: 0 auto;
+}
+
+    .blog-fotos img {
+        width: 75%;
+        margin: 0 auto 2.5% auto;
+        display: block;
+    }
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="layer">
+			<div class="topo">
+				<div class="header-logo">
+					<img src="images/logo-png.png">
+				</div>
+
+				<nav class="header-menu">
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="#">Quem Sou</a></li>
+						<li><a href="../portfolio.html">Portfólio</a></li>
+						<li><a href="#">Orçamento</a></li>
+						<li><a href="#">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<nav class="header-menu menu-desktop">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="#">Quem Sou</a></li>
+				<li><a href="../portfolio.html">Portfólio</a></li>
+				<li><a href="#">Orçamento</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="portfolio" style="height: 95%;">
+		<h1 class="hideme">Últimos Trabalhos</h1>
+
+		<!--<div class="showhim">HOVER ME
+			<div class="showme">hai</div>
+			<div class="ok">ok</div>
+		</div>-->
+
+		<div class="fotos">
+			<div class="foto escurecer hideme">
+				<img src="images/foto1.jpg">
+				<div class="overlay">
+					<p>Título e Sub-título Maior / Título e Sub-título Maior</p>
+				</div>
+			</div>
+			<div class="foto escurecer hideme">
+				<img src="images/foto2.jpg">
+				<div class="overlay">
+					<p>Título 2</p>
+				</div>
+			</div>
+			<div class="foto escurecer hideme">
+				<img src="images/foto3.jpg">
+				<div class="overlay">
+					<p>Título 3</p>
+				</div>
+			</div>
+			<div class="foto escurecer hideme">
+				<img src="images/foto4.jpg">
+				<div class="overlay">
+					<p>Título 4</p>
+				</div>
+			</div>
+			<div class="foto escurecer hideme">
+				<img src="images/foto1.jpg">
+				<div class="overlay">
+					<p>Título 5</p>
+				</div>
+			</div>
+			<div class="foto escurecer hideme">
+				<img src="images/foto2.jpg">
+				<div class="overlay">
+					<p>Título 6</p>
+				</div>
+			</div>
+			<div class="foto escurecer hideme">
+				<img src="images/foto3.jpg">
+				<div class="overlay">
+					<p>Título 7</p>
+				</div>
+			</div>
+			<div class="foto escurecer hideme">
+				<img src="images/foto4.jpg">
+				<div class="overlay">
+					<p>Título 8</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mais">
+		<i class="fa fa-plus-circle" aria-hidden="true"></i>
+	</div>
+
+	<!--<div class="qs parallax"></div>-->
+
+	<div class="quem-sou">
+		<h1 class="hideme">Quem Sou</h1>
+
+		<div class="perfil">
+			<img src="images/perfil.jpg" class="focus">
+		</div>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+			irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+			non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<div class="mais">
+			<i class="fa fa-plus-circle" aria-hidden="true"></i>
+		</div>
+	</div>
+
+	<!--<div class="qs2 parallax"></div>-->
+
+	<div class="testemunhos">
+		<h1 class="hideme">Testemunhos</h1>
+
+		<div class="testemunho">
+			<img src="images/avatar.png">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="testemunho">
+			<img src="images/avatar.png">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="testemunho">
+			<img src="images/avatar.png">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="testemunho">
+			<img src="images/avatar.png">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+
+	<div class="redes">
+		<div class="container">
+			<div class="rede facebook">
+				<div class="icon">
+					<i class="fa fa-facebook-official" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="rede instagram">
+				<div class="icon">
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="rede email">
+				<div class="icon">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="fdiv">
+			<nav class="footer-menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Quem Sou</a></li>
+					<li><a href="#">Portfólio</a></li>
+					<li><a href="#">Orçamento</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<div class="fdiv"></div>
+	</footer>
+
+	<!--jQuery-->
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+	<script type="text/javascript">
+		/*Fade In e Out do Menu*/
+		if (document.documentElement.clientWidth >= 1280) {
+            (function($) {          
+                $(document).ready(function() {                    
+                    $(window).scroll(function() {                          
+                        if ($(this).scrollTop() > 250) {
+                            $('.menu-desktop').fadeIn(300);
+                        } else {
+                            $('.menu-desktop').fadeOut(300);
+                        }
+                    });
+                });
+            })(jQuery);
+        }
+
+		$(document).ready(function() {
+			/* Every time the window is scrolled ... */
+    		$(window).scroll( function() {    
+        		/* Check the location of each desired element */
+        		$('.hideme').each( function(i) {
+					var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            		var bottom_of_window = $(window).scrollTop() + $(window).height();
+					
+					/* If the object is completely visible in the window, fade it it */
+            		if( bottom_of_window > bottom_of_object ) {
+						$(this).animate({'opacity':'1'},500);
+                    }
+				}); 
+			});
+		});
+
+		$(document).ready(function() {
+			/* Every time the window is scrolled ... */
+    		$(window).scroll( function() {    
+        		/* Check the location of each desired element */
+        		$('.perfil').each( function(i) {
+					var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            		var bottom_of_window = $(window).scrollTop() + $(window).height();
+					
+					/* If the object is completely visible in the window, fade it it */
+            		if( bottom_of_window > bottom_of_object ) {
+						$(this).css({width:"50%"});
+                    }
+				}); 
+			});
+		});
+</script>
+</body>
+
+</html>
