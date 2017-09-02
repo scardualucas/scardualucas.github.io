@@ -472,6 +472,12 @@ hr {
   text-align: left;
 }
 
+.blog-post img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
 .blog-post p:first-of-type {
   margin-top: 45px;
 }
