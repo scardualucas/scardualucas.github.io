@@ -1,0 +1,50 @@
+/*===== SASS VARIABLES =====*/
+$bg-color-main: #109BC1;
+$bg-color-secondary: #005B8E;
+
+/*===== RESET =====*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    @extend .flex;
+
+    background: linear-gradient($bg-color-main, $bg-color-secondary);
+    height: 100%;;
+    width: 100%;
+
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        img {
+            width: 45%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        img {
+            width: 30%;
+        }
+    }
+}
